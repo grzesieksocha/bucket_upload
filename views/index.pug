@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+
+  form(action="/", method="post")
+    input(type="text", name="text")
+    button(type="submit", id="submit") SUBMIT
+  a(href="/publish", id="publish") PUBLISH
+
+  script(src="javascripts/main.js")
